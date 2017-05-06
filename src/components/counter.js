@@ -26,6 +26,7 @@ const mapStateToProps = (state) => {
 	};
 }
 
+
 const mapDispatchToProps = (dispatch) => {
 	return {
 		onIncrease: () => {
@@ -36,6 +37,7 @@ const mapDispatchToProps = (dispatch) => {
 		}
 	};
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 
