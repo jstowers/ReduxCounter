@@ -6,9 +6,10 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
 import Counter from './components/counter';
 
-export default {
+export default (
 
 	<Route path = '/' component = { App } >
-		<IndexRoute component = { Counter }/>
+		<IndexRoute component = { Counter } />
 	</Route>
-}
+
+);
