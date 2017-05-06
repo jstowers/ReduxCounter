@@ -4,7 +4,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
-import Counter from './containers/counter'
+import Counter from './components/counter';
 
 export default {
 
