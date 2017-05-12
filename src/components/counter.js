@@ -1,5 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { 
+	Button,
+	Col,
+	Grid,
+	Label
+} from 'react-bootstrap';
 
 // import action creators
 import { increase, decrease } from '../actions/index';
@@ -12,9 +18,26 @@ class Counter extends Component {
 
 		return (
 			<div>
-				<button onClick = { this.props.onIncrease }>+</button>
-				{ this.props.count.counter }
-				<button onClick = { this.props.onDecrease }>-</button>
+				<h3>Count On</h3>
+				<Grid>
+					<Col xs={6} md={1}>
+						<Button
+							bsStyle="primary"
+							onClick={ this.props.onIncrease }>+
+						</Button>
+					</Col>
+					<Col xs={6} md={1}>
+						<h2>
+							<Label>{ this.props.count.counter }</Label>
+						</h2>
+					</Col>
+					<Col xs={6} md={1}>
+						<Button
+							bsStyle="primary"
+							onClick={ this.props.onDecrease }>-
+						</Button>
+					</Col>
+				</Grid>
 			</div>
 		);
 	}
@@ -26,7 +49,6 @@ const mapStateToProps = (state) => {
 	};
 }
 
-
 const mapDispatchToProps = (dispatch) => {
 	return {
 		onIncrease: () => {
@@ -37,7 +59,6 @@ const mapDispatchToProps = (dispatch) => {
 		}
 	};
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 
