@@ -14,7 +14,7 @@ class Counter extends Component {
 
 	render() {
 
-		// console.log('this.props =', this.props);
+		const count = this.props.count.counter;
 
 		return (
 			<div>
@@ -28,13 +28,13 @@ class Counter extends Component {
 					</Col>
 					<Col xs={6} md={1}>
 						<h2>
-							<Label>{ this.props.count.counter }</Label>
+							<Label>{ count }</Label>
 						</h2>
 					</Col>
 					<Col xs={6} md={1}>
 						<Button
 							bsStyle="primary"
-							onClick={ this.props.onDecrease }>-
+							onClick={ count > 0 ? this.props.onDecrease : null }>-
 						</Button>
 					</Col>
 				</Grid>
@@ -50,11 +50,14 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
+
 	return {
 		onIncrease: () => {
+
 			dispatch(increase());
 		},
 		onDecrease: () => {
+
 			dispatch(decrease());
 		}
 	};
