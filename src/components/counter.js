@@ -18,26 +18,28 @@ class Counter extends Component {
 
 		return (
 			<div>
-				<h3>Count On</h3>
-				<Grid>
-					<Col xs={6} md={1}>
-						<Button
-							bsStyle="primary"
-							onClick={ this.props.onIncrease }>+
-						</Button>
-					</Col>
-					<Col xs={6} md={1}>
-						<h2>
+				<h3 className="title">
+					It's the Final Counter!
+				</h3>
+				<div className="counter">
+					<Grid>
+						<Col xs={6} md={1}>
+							<Button
+								bsStyle="primary"
+								onClick={ count > 0 ? this.props.onDecrease : null }>-
+							</Button>
+						</Col>
+						<Col xs={6} md={1}>
 							<Label>{ count }</Label>
-						</h2>
-					</Col>
-					<Col xs={6} md={1}>
-						<Button
-							bsStyle="primary"
-							onClick={ count > 0 ? this.props.onDecrease : null }>-
-						</Button>
-					</Col>
-				</Grid>
+						</Col>
+						<Col xs={6} md={1}>
+							<Button
+								bsStyle="primary"
+								onClick={ this.props.onIncrease }>+
+							</Button>
+						</Col>
+					</Grid>
+				</div>
 			</div>
 		);
 	}
