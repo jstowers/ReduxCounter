@@ -23,16 +23,16 @@ class Counter extends Component {
 				</h3>
 				<div className="counter">
 					<Grid>
-						<Col xs={6} md={1}>
+						<Col xs={2} md={1}>
 							<Button
 								bsStyle="primary"
 								onClick={ count > 0 ? this.props.onDecrease : null }>-
 							</Button>
 						</Col>
-						<Col xs={6} md={1}>
+						<Col xs={2} md={1}>
 							<Label>{ count }</Label>
 						</Col>
-						<Col xs={6} md={1}>
+						<Col xs={2} md={1}>
 							<Button
 								bsStyle="primary"
 								onClick={ this.props.onIncrease }>+
