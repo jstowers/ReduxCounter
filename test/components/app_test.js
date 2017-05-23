@@ -8,8 +8,12 @@ describe('App' , () => {
     component = renderComponent(App);
   });
 
-  it('renders something', () => {
+  it('renders the app component', () => {
     expect(component).to.exist;
   });
-  
+
+   it('app component length to equal 1', () => {
+    expect(component.length).to.equal(1);
+  });
+
 });

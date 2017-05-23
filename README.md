@@ -6,5 +6,5 @@ Using React and Redux.
 To Do:
 1. Improve styling of button.
 2. Refactor code.
-3. Add unit tests using Mocha and Enzyme
+3. Add unit tests using Mocha and Enzyme.
 4. Implement Webpack 2.0.

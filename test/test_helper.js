@@ -16,6 +16,7 @@ const $ = _$(window);
 
 chaiJquery(chai, chai.util, $);
 
+// helper function to render components
 function renderComponent(ComponentClass, props = {}, state = {}) {
   const componentInstance =  TestUtils.renderIntoDocument(
     <Provider store={createStore(reducers, state)}>
