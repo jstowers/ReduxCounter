@@ -12,4 +12,9 @@ describe('App' , () => {
     expect(component.length).to.equal(1);
   });
 
+  it('renders a div', ()  => {
+    console.log('component =', component);
+  	expect(component.find('div').length).to.equal(1);
+  })
+
 });
