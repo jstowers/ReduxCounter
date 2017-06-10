@@ -7,6 +7,8 @@ import {
 	Label
 } from 'react-bootstrap';
 
+// import { Table } from './table';
+
 // import action creators
 import { increase, decrease } from '../actions/index';
 
@@ -44,6 +46,8 @@ class Counter extends Component {
 		);
 	}
 }
+
+// <Table />
 
 const mapStateToProps = (state) => {
 	return {
