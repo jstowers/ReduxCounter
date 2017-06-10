@@ -18,3 +18,48 @@
 .genStyleFont13 {
 	font-size: 13px;
 }
+
+/* BEST FORMAT FOR BOOTSTRAP TABLE
+highlights row on mouse hover to 'background-color' and change cell font to 'color' */
+tr:hover td {
+	background-color: #FFFBCC;
+	color: blue;
+}
+
+/* 
+	
+
+	<th> = table header
+	The name for columns, bold and centered by default
+
+	<td> = table cell (data)
+
+
+*/
+
+/* highlight color for hovering a row in a table
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #FFFBCC;
+}
+*/
+
+/* sets alternating rows to yellow background automatically, including header
+.table-hover {
+	background-color: #FFFBCC;
+}
+*/
+
+/* sets alternating rows to background-color automatically, starting with row 2
+.table-hover tbody {
+	background-color: #FFFBCC;
+}
+*/
+
+/* highlights the active table cell <td> on mouse hover 
+td:hover {
+  background-color: #FFFBCC;
+}
+*/
+
+
+

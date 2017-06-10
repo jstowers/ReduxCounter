@@ -34,17 +34,17 @@ export default class Table extends Component {
 			{
 				id:5,
 				name:'MakerSquare',
-				years:'2006',
+				years:'2016',
 				degree:'Full Stack'
 			}
 		];
 
 		return (
 			<div className="genSytleFont13">
-				<BootstrapTable data={ schoolData } hover={true} striped={true}>
-					<TableHeaderColumn width="50" dataField="id" isKey={true} dataSort={true}>Id</TableHeaderColumn>
+				<BootstrapTable data={ schoolData } hover={false} striped={true}>
+					<TableHeaderColumn width="100" dataField="id" isKey={true} dataSort={true}>Id</TableHeaderColumn>
 					<TableHeaderColumn width="100" dataField="name">Name</TableHeaderColumn>
-					<TableHeaderColumn width="75" dataField="years">Years</TableHeaderColumn>
+					<TableHeaderColumn width="100" dataField="years">Years</TableHeaderColumn>
 					<TableHeaderColumn width="100" dataField="degree">Degree</TableHeaderColumn>
 				</BootstrapTable>
 			</div>
