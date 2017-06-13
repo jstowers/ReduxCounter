@@ -20,11 +20,13 @@
 }
 
 /* BEST FORMAT FOR BOOTSTRAP TABLE
-highlights row on mouse hover to 'background-color' and change cell font to 'color' */
+highlights row on mouse hover to 'background-color' and changes cell font to 'color' */
+
 tr:hover td {
 	background-color: #FFFBCC;
 	color: blue;
 }
+
 
 /* 
 	

@@ -41,7 +41,7 @@ export default class Table extends Component {
 
 		return (
 			<div className="genSytleFont13">
-				<BootstrapTable data={ schoolData } hover={false} striped={true}>
+				<BootstrapTable data={ schoolData } hover striped={true}>
 					<TableHeaderColumn width="100" dataField="id" isKey={true} dataSort={true}>Id</TableHeaderColumn>
 					<TableHeaderColumn width="100" dataField="name">Name</TableHeaderColumn>
 					<TableHeaderColumn width="100" dataField="years">Years</TableHeaderColumn>
