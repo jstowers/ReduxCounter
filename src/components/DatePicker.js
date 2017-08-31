@@ -17,14 +17,15 @@ const propTypes = {
 }
 
 const defaultProps = {
-	autoFocus: false,
+	autoFocus: true,
 	autoFocusEndDate: false,
 	initialStartDate: null,
 	initialEndDate: null,
 	startDateId: START_DATE,
 	startDatePlaceholderText: 'Start Date',
 	endDateId: END_DATE,
-	endDatePlaceholderText: 'End Date'
+	endDatePlaceholderText: 'End Date',
+	//isOutsideRange: day => !isInclusivelyAfterDay(day, moment()),
 }
 
 class DatePicker extends Component {
@@ -62,9 +63,10 @@ class DatePicker extends Component {
 				<DateRangePicker
 					  startDate={ startDate }
 					  endDate={ endDate }
+					  focusedInput={ focusedInput }
 					  onDatesChange={ this.onDatesChange }
-					  focusedInput={ focusedInput } 
 					  onFocusChange={ this.onFocusChange }
+					  isOutsideRange={ () => false }
 			  	/>
 			</div>
 		);
