@@ -7,6 +7,8 @@ import {
 	Label
 } from 'react-bootstrap';
 
+import DatePicker from './DatePicker';
+
 // import { Table } from './table';
 
 // import action creators
@@ -42,6 +44,7 @@ class Counter extends Component {
 						</Col>
 					</Grid>
 				</div>
+				<DatePicker />
 			</div>
 		);
 	}
